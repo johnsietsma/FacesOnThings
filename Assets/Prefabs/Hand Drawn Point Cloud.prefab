@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4005232495254376}
   - component: {fileID: 114018967870835178}
   - component: {fileID: 199488517716270130}
-  - component: {fileID: 114098095240455088}
+  - component: {fileID: 114418818705290806}
   - component: {fileID: 198971658867670692}
   m_Layer: 0
   m_Name: Hand Drawn Point Cloud
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afcab4e7938ae724a8a59ecac3580761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114098095240455088
+--- !u!114 &114418818705290806
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1475396827499598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 468ea6c98cd64494abbc2c2f34d6cde2, type: 3}
+  m_Script: {fileID: 11500000, guid: 386b05667469a424d9bf642a0652edf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!198 &198971658867670692
