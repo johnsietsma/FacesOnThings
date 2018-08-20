@@ -1,0 +1,34 @@
+{
+    "name": "UnityARSim",
+    "version": "0.0.1-preview.1",
+    "libraryName": "UnityARSim",
+    "sessions": [
+    {
+        "id": "ARSim-Session"
+    }],
+    "planes": [{
+        "id": "ARSim-Plane",
+        "supportsPlaneFinding": true
+    }],
+    "depths": [{
+        "id": "ARSim-Depth",
+        "supportsFeaturePoints": true
+    }],
+    "cameras": [{
+        "id": "ARSim-Camera",
+        "providesAverageBrightness": false,
+        "providesAverageColorTemp": false,
+        "providesProjectionMatrix": true,
+        "providesDisplayMatrix": false,
+        "providesTimestamp": false
+    }],
+    "inputs": [{
+        "id": "ARSim-Input"
+    }],
+    "referencePoints": [{
+        "id": "ARSim-ReferencePoint"
+    }],
+    "raycasts": [{
+        "id": "ARSim-Raycast"
+    }]
+}
