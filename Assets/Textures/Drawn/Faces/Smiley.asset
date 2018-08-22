@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1566551335, guid: ab85ac808950aa04ea8320fc273cd8c0, type: 3}
-  m_Name: Smiliey
+  m_Name: Smiley
   m_EditorClassIdentifier: 
   frames:
   - _texture: {fileID: 28580479992096178}
