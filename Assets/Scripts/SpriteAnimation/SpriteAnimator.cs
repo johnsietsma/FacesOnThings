@@ -1,33 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class FaceAnimation : MonoBehaviour, ISelectHandler
+public class SpriteAnimator : MonoBehaviour
 {
     [SerializeField]
-	[Tooltip("Animaiton speed (frames per second)")]
-    private float animationSpeed = 20;
+    private SpriteAnimationData animationData;
 
-    [SerializeField]
-    Image targetImage;
-
-    [SerializeField]
-    private Sprite[] sprites;
+    ISpriteAnimation spriteAnimation;
 
     private float animationFrameTime;
     private float startFrameTime;
     private int frameIndex;
 
-    private Image image;
     private bool isRunning;
 
     void Start()
     {
-        image = GetComponent<Image>();
-        animationFrameTime = 1 / animationSpeed;
+        spriteAnimation = GetComponent<ISpriteAnimation>();
 
+        animationFrameTime = 1 / animationData.animationSpeed;
         StartAnimation();
     }
 
@@ -41,11 +33,6 @@ public class FaceAnimation : MonoBehaviour, ISelectHandler
             ShowNextFrame();
         }
 	}
-
-    public void OnSelect(BaseEventData data)
-    {
-        Debug.Log("Selected: " + gameObject.name);
-    }
 
     public void StartAnimation()
 	{
@@ -61,8 +48,8 @@ public class FaceAnimation : MonoBehaviour, ISelectHandler
 
 	private void ShowNextFrame()
 	{
-        frameIndex = (frameIndex + 1) % sprites.Length;
-        targetImage.sprite = sprites[frameIndex];
+        frameIndex = (frameIndex + 1) % animationData.sprites.Length;
+        spriteAnimation.ShowSprite( animationData.sprites[frameIndex] );
     }
 
 }

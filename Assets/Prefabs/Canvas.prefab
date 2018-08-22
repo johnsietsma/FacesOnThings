@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 224280099217488170}
   - component: {fileID: 222113667385801926}
   - component: {fileID: 114869040145936414}
-  - component: {fileID: 114001823619369668}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -55,7 +54,6 @@ GameObject:
   - component: {fileID: 224117162993508558}
   - component: {fileID: 222807741650388568}
   - component: {fileID: 114340936823786068}
-  - component: {fileID: 114707878191992018}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -73,7 +71,6 @@ GameObject:
   - component: {fileID: 224026568882989826}
   - component: {fileID: 222193849443730550}
   - component: {fileID: 114285230022718194}
-  - component: {fileID: 114542943937073542}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -93,6 +90,7 @@ GameObject:
   - component: {fileID: 114257291882033442}
   - component: {fileID: 114598292870091252}
   - component: {fileID: 114418331162909252}
+  - component: {fileID: 114133795450968122}
   m_Layer: 0
   m_Name: Surprised Button
   m_TagString: Untagged
@@ -110,7 +108,6 @@ GameObject:
   - component: {fileID: 224206039048790202}
   - component: {fileID: 222814829401725780}
   - component: {fileID: 114432459016983800}
-  - component: {fileID: 114597309541855556}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -128,7 +125,6 @@ GameObject:
   - component: {fileID: 224605080403980670}
   - component: {fileID: 222529180173420786}
   - component: {fileID: 114000012682435632}
-  - component: {fileID: 114490150742793754}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -166,6 +162,7 @@ GameObject:
   - component: {fileID: 114702226161590782}
   - component: {fileID: 114387283927377772}
   - component: {fileID: 114297974671712398}
+  - component: {fileID: 114261589409634268}
   m_Layer: 0
   m_Name: Question Mark Button
   m_TagString: Untagged
@@ -183,7 +180,6 @@ GameObject:
   - component: {fileID: 224335113484500620}
   - component: {fileID: 222572658313738580}
   - component: {fileID: 114032476704348868}
-  - component: {fileID: 114497437249941244}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -239,6 +235,7 @@ GameObject:
   - component: {fileID: 114895938017374488}
   - component: {fileID: 114031280268740542}
   - component: {fileID: 114736259915469598}
+  - component: {fileID: 114537438313447926}
   m_Layer: 0
   m_Name: Mustache Button
   m_TagString: Untagged
@@ -276,6 +273,7 @@ GameObject:
   - component: {fileID: 114964851562801826}
   - component: {fileID: 114394704277115604}
   - component: {fileID: 114111572957850890}
+  - component: {fileID: 114927771873361686}
   m_Layer: 0
   m_Name: Smiley Button
   m_TagString: Untagged
@@ -312,6 +310,7 @@ GameObject:
   - component: {fileID: 114536669573346912}
   - component: {fileID: 114657495304959466}
   - component: {fileID: 114013012157507672}
+  - component: {fileID: 114496134539871394}
   m_Layer: 0
   m_Name: Alseep Button
   m_TagString: Untagged
@@ -349,6 +348,8 @@ GameObject:
   - component: {fileID: 114386877307340698}
   - component: {fileID: 114852785762211170}
   - component: {fileID: 114705223955336466}
+  - component: {fileID: 114697134985297220}
+  - component: {fileID: 114599862940041784}
   m_Layer: 0
   m_Name: Happy Button
   m_TagString: Untagged
@@ -455,22 +456,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114001823619369668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1137224901004410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: 9f7b10eb1c87c5f4482eeb670591ccd0, type: 3}
-  - {fileID: 21300002, guid: 9f7b10eb1c87c5f4482eeb670591ccd0, type: 3}
-  - {fileID: 21300004, guid: 9f7b10eb1c87c5f4482eeb670591ccd0, type: 3}
 --- !u!114 &114013012157507672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -631,6 +616,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &114133795450968122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275562272838914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114173642267878138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -706,6 +704,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114261589409634268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443445061888370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114285230022718194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -963,22 +974,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114490150742793754
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1373196396840064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: 8eab485c82da6d541b9584743ca82cfa, type: 3}
-  - {fileID: 21300002, guid: 8eab485c82da6d541b9584743ca82cfa, type: 3}
-  - {fileID: 21300004, guid: 8eab485c82da6d541b9584743ca82cfa, type: 3}
 --- !u!114 &114490232922788242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,22 +1028,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114497437249941244
+--- !u!114 &114496134539871394
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513313386086716}
+  m_GameObject: {fileID: 1851037918936600}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: 9336c5f2a81cdf14eb7a82e4912776c2, type: 3}
-  - {fileID: 21300002, guid: 9336c5f2a81cdf14eb7a82e4912776c2, type: 3}
-  - {fileID: 21300004, guid: 9336c5f2a81cdf14eb7a82e4912776c2, type: 3}
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114536669573346912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1076,38 +1068,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114542943937073542
+--- !u!114 &114537438313447926
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1272177445646210}
+  m_GameObject: {fileID: 1720687395420020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: 52a9a29e10615244f923079489629ab0, type: 3}
-  - {fileID: 21300002, guid: 52a9a29e10615244f923079489629ab0, type: 3}
-  - {fileID: 21300004, guid: 52a9a29e10615244f923079489629ab0, type: 3}
---- !u!114 &114597309541855556
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294445499114294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: c65d07b0f92a2c543a6d7759af77d1e4, type: 3}
-  - {fileID: 21300002, guid: c65d07b0f92a2c543a6d7759af77d1e4, type: 3}
-  - {fileID: 21300004, guid: c65d07b0f92a2c543a6d7759af77d1e4, type: 3}
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114598292870091252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1150,6 +1123,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114599862940041784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924079719274326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d3bfc2dfadc814392d92a849349b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 114869040145936414}
+  sprites: []
 --- !u!114 &114604648836731874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1262,6 +1248,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114697134985297220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924079719274326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114702226161590782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1308,22 +1307,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &114707878191992018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1265772940594132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSpeed: 10
-  sprites:
-  - {fileID: 21300000, guid: 9c8e2e3a40515b9449e460b5541f585a, type: 3}
-  - {fileID: 21300002, guid: 9c8e2e3a40515b9449e460b5541f585a, type: 3}
-  - {fileID: 21300004, guid: 9c8e2e3a40515b9449e460b5541f585a, type: 3}
 --- !u!114 &114736259915469598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1451,6 +1434,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114927771873361686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765319367986522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2097a9a4960ecac409f4a528299d4d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSpeed: 20
+  sprites: []
 --- !u!114 &114964851562801826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1906,7 +1902,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 210.3, y: -60.4}
+  m_AnchoredPosition: {x: 210.30005, y: -60.399902}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &224771168251242006
