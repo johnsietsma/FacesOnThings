@@ -8,17 +8,7 @@ using UnityEngine.XR.ARFoundation;
 public class FacePlacer : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("Instantiates this prefab on a plane at the touch location.")]
-    GameObject m_PlacedPrefab;
-
-    /// <summary>
-    /// The prefab to instantiate on touch.
-    /// </summary>
-    public GameObject placedPrefab
-    {
-        get { return m_PlacedPrefab; }
-        set { m_PlacedPrefab = value; }
-    }
+    Transform m_FacePlaneTransform;
 
     /// <summary>
     /// The object instantiated as a result of a successful raycast intersection with a plane.
@@ -47,16 +37,10 @@ public class FacePlacer : MonoBehaviour
 
             if (m_SessionOrigin.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon))
             {
+                Debug.Log("Hit");
                 Pose hitPose = s_Hits[0].pose;
-
-                if (spawnedObject == null)
-                {
-                    spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
-                }
-                else
-                {
-                    spawnedObject.transform.position = hitPose.position;
-                }
+                m_FacePlaneTransform.position = hitPose.position;
+                m_FacePlaneTransform.rotation = hitPose.rotation;
             }
         }
     }

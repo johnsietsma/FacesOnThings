@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class SpriteAnimator : MonoBehaviour
 {
+    public SpriteAnimationData AnimationData
+    {
+        get { return animationData; }
+        set
+        {
+            animationData = value;
+            // Restart to refresh frame and frame index data
+            if( isRunning ) StartAnimation();
+        }
+    }
+
     [SerializeField]
     private SpriteAnimationData animationData;
 
@@ -19,37 +30,38 @@ public class SpriteAnimator : MonoBehaviour
     {
         spriteAnimation = GetComponent<ISpriteAnimation>();
 
-        animationFrameTime = 1 / animationData.animationSpeed;
         StartAnimation();
     }
 
-	void Update()
-	{
-        if( !isRunning ) return;
+    void Update()
+    {
+        if (!isRunning) return;
 
-        if( Time.time > startFrameTime + animationFrameTime )
-		{
+        if (Time.time > startFrameTime + animationFrameTime)
+        {
             startFrameTime = Time.time;
             ShowNextFrame();
         }
-	}
-
-    public void StartAnimation()
-	{
-        startFrameTime = Time.time;
-        isRunning = true;
     }
 
-	public void StopAnimation()
-	{
+    public void StartAnimation()
+    {
+        startFrameTime = Time.time;
+        isRunning = true;
+        frameIndex = 0;
+        animationFrameTime = 1 / animationData.animationSpeed;
+    }
+
+    public void StopAnimation()
+    {
         startFrameTime = 0;
         isRunning = false;
     }
 
-	private void ShowNextFrame()
-	{
+    private void ShowNextFrame()
+    {
         frameIndex = (frameIndex + 1) % animationData.sprites.Length;
-        spriteAnimation.ShowSprite( animationData.sprites[frameIndex] );
+        spriteAnimation.ShowSprite(animationData.sprites[frameIndex]);
     }
 
 }

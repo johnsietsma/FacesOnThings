@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92d74ffe8aafd79419a1e05423a88d70, type: 3}
-  m_Name: Quesiton Mark
+  m_Name: Question Mark
   m_EditorClassIdentifier: 
   animationSpeed: 20
   sprites:
