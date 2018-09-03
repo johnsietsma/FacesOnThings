@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(SpriteAnimator))]
-public class SpriteAnimatorCopierSelectHandler : MonoBehaviour, ISelectHandler
+public class AnimationDataCopySelectHandler : MonoBehaviour, ISelectHandler
 {
-
     [SerializeField]
     private SpriteAnimator targetSpriteAnimator;
 
@@ -19,6 +18,7 @@ public class SpriteAnimatorCopierSelectHandler : MonoBehaviour, ISelectHandler
 
     public void OnSelect(BaseEventData data)
     {
+        Debug.Log("Copy data: " + spriteAnimator.AnimationData.name);
         targetSpriteAnimator.AnimationData = spriteAnimator.AnimationData;
     }
 }

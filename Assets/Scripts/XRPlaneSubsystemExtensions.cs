@@ -9,12 +9,12 @@ public static class XRPlaneSubsystemExtensions {
 
     private static List<BoundedPlane> s_BoundedPlanes = new List<BoundedPlane>();
 
-    public static BoundedPlane GetPlane( this XRPlaneSubsystem planeSubsystem, TrackableId planeId )
+    public static BoundedPlane GetPlane( this XRPlaneSubsystem planeSubsystem, TrackableId trackableId )
     {
         planeSubsystem.GetAllPlanes(s_BoundedPlanes);
         foreach( var plane in s_BoundedPlanes )
         {
-            if (plane.Id == planeId) return plane;
+            if (plane.Id == trackableId) return plane;
         }
         return new BoundedPlane();
     }

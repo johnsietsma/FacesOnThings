@@ -11,7 +11,7 @@ public class SpriteAnimator : MonoBehaviour
         {
             animationData = value;
             // Restart to refresh frame and frame index data
-            if( isRunning ) StartAnimation();
+            if( animationData!=null ) StartAnimation();
         }
     }
 
@@ -29,8 +29,8 @@ public class SpriteAnimator : MonoBehaviour
     void Start()
     {
         spriteAnimation = GetComponent<ISpriteAnimation>();
-
-        StartAnimation();
+        if (spriteAnimation==null) Debug.LogError("GameObject has a SpriteAnimator, but not an SpriteAnimation Component. Add a UIImageSpriteAnimttion or a MeshRendererSpriteAnimation.");
+        if( AnimationData!=null ) StartAnimation();
     }
 
     void Update()
